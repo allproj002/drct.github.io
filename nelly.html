@@ -5,8 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DRCT: Saving Image Super-Resolution away from Information Bottlenecks</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> <!-- Noto Sans font link here -->
-
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
 <style>
 body {
     margin: 0;
@@ -26,31 +25,44 @@ body {
 }
 
 .header {
-    text-align: center; /* Center align the header */
+    text-align: center; /* Center align the header */ 
     margin: 0; /* Remove default margins */
     padding: 10px 0; /* Add some padding for spacing */
-    font-size: 3em; /* Increase font size */
+    font-size: 2.2em; /* Increase font size */
 }
-    .authors {
+.authors {
     padding: 0; /* Remove default padding */
     margin: 20px 0; /* Add some margin for spacing */
-    font-size: 1.5em; /* Increase font size */
+    font-size: 1.7em; /* Increase font size */
 }
-
+.author-name,
+.author-name:visited { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
+    color: #4682b4;
+    text-decoration: none; /* 移除底线 */
+}
+.author-name:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
+    text-decoration: underline; /* 移除底线 */
+}
+.author-namenone,
+.author-namenone:visited { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
+    color: #4682b4;
+    text-decoration: none; /* 移除底线 */
+}
+.author-namenone:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
+    text-decoration: none; /* 移除底线 */
+}
 .author {
     display: inline;
     margin: 0 10px;
+    margin-bottom: 30px; /* 這是標題下方的空間，根據需要調整 */
 }
 
-.author-name {
-    color: #4682b4;
-}
 
 .institute {
     margin-top: 15px; /* 這會在機構信息和作者名稱之間增加空間 */
     font-size: 0.8em; /* 根據需要調整字體大小 */
     color: #333; /* 文本顏色 */
-    margin-bottom: 20px; /* 這是標題下方的空間，根據需要調整 */
+    margin-bottom: 40px; /* 這是標題下方的空間，根據需要調整 */
 }
 
 
@@ -58,7 +70,7 @@ body {
     text-align: center;
     font-size: 6em;
     font-weight: bold;
-    margin-top: -80px; /* 減少或移除這個屬性以減少空間 */
+    margin-top: 30px; /* 減少或移除這個屬性以減少空間 */
     margin-bottom: 60px; /* 這是標題下方的空間，根據需要調整 */
     color: #333;
 }
@@ -172,6 +184,13 @@ body {
   text-align: center; /* Center align the entire BibTeX section */
 }
 
+.additional-text {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some margin above and below the text */
+    font-size: 3em; /* Adjust the font size as needed */
+}
+
+    
 </style>
 </head>
 <body>
@@ -179,13 +198,11 @@ body {
     <h1>DRCT</h1>
     <h1>Saving Image Super-Resolution away from Information Bottlenecks</h1>
         <ul class="authors">
-            <li class="author">
-                <span class="author-name">Chih-Chung Hsu</span>, 
-                <span class="author-name">Chia-Ming Lee</span>, 
-                <span class="author-name">Yi-Shiuan Chou</span> 
+            <li class="authors">
+                <a href="https://cchsu.info/wordpress/" class="author-name">Chih-Chung Hsu</a>, 
+                <a href="https://ming053l.github.io/" class="author-name">Chia-Ming Lee</a>,  
+                <span class="author-namenone">Yi-Shiuan Chou</span>, 
                 <div class="institute">Institute of Data Science, National Cheng Kung University, Taiwan</div>
- 
-
             </li>
             <!-- Add more authors here -->
         </ul>
@@ -193,17 +210,21 @@ body {
     
     <div class="button-list">
         <h2 class="conference-title">CVPR 2024</h2>
-        <a href="#" class="button">arXiv</a>
-        <a href="#" class="button">Code</a>
-        <a href="#" class="button">Evaluation Results</a>
+        <a href="https://arxiv.org/abs/2404.01643" class="button">arXiv</a>
+        <a href="https://github.com/ming053l/E2D" class="button">Code</a>
+        <a href="https://arxiv.org/abs/2403.11230" class="button">technical report</a>
         <!-- Add more buttons here -->
     </div>
+
+
+<!-- Space between images -->
+<div style="height: 90px;"></div> <!-- Adjust the height as needed for more or less space -->
 
 
 
 <figure class="abstract-container" style="margin-top: 0;"> <!-- Remove top margin to avoid double spacing -->
   <img src="1.png" alt="Descriptive text for the image" style="width:40%; height:auto; display: block; margin: auto;">
-  <figcaption class="abstract-content" style="margin-top: 40px;">
+  <figcaption class="abstract-content" style="margin-top: 70px;">
     The feature map intensity on various benchmark datasets. We observed that feature map intensities decrease sharply at the end of SISR network, indicating potential information loss. In this paper, we propose DRCT to address this issue by enhancing receptive fields and adding dense-connections within residual blocks to mitigate information bottlenecks, thereby improving performance with a simpler model design.
   </figcaption>
 </figure>
@@ -211,7 +232,7 @@ body {
 
 
 <!-- Space between images -->
-<div style="height: 60px;"></div> <!-- Adjust the height as needed for more or less space -->
+<div style="height: 70px;"></div> <!-- Adjust the height as needed for more or less space -->
 
 
     <!-- Abstract Section -->
@@ -227,7 +248,7 @@ body {
 
 <figure class="abstract-container" style="margin-top: 0;">
   <img src="2.png" alt="Descriptive text for the image" style="width:100%; height:auto; display: block; margin: auto;">
-  <figcaption class="abstract-content" style="margin-top: 40px;">
+  <figcaption class="abstract-content" style="margin-top: 60px;">
     The feature map visualization displays, from top to bottom, SwinIR, HAT, and DRCT, with positions further to the right representing deeper layers within the network. For both SwinIR and HAT, the intensity of the feature maps is significant in the shallower layers but diminishes towards the network’s end. We consider this phenomenon implies the loss of spatial information, leading to the limitation and information bottleneck with SISR tasks. (zoom in to better observe the color-bar besides feature maps.)
   </figcaption>
 </figure>
@@ -235,22 +256,20 @@ body {
 <!-- Space between images -->
 <div style="height: 120px;"></div> <!-- Adjust the height as needed for more or less space -->
 
-
-
 <figure class="abstract-container" style="margin-top: 0;">
   <img src="table.png" alt="Descriptive text for the image" style="width:60%; height:auto; display: block; margin: auto;">
-  <figcaption class="abstract-content" style="margin-top: 40px;">
+  <figcaption class="abstract-content" style="margin-top: 60px;">
     Quantitative comparison with the several peer-methods on benchmark datasets. "<span style="font-weight:bold;">†</span>" indicates that methods adopt pre-training strategy on ImageNet. "<span style="font-weight:bold;">‡</span>" represents that methods use same-task progressive-training strategy. The top three results are marked in <span style="font-weight:bold; color:red;">red</span>, <span style="font-weight:bold; color:blue;">blue</span>, and <span style="font-weight:bold; color:orange;">orange</span>, respectively.
   </figcaption>
 </figure>
-
 
 <!-- Space between images -->
 <div style="height: 120px;"></div> <!-- Adjust the height as needed for more or less space -->
 
 
+
 <figure class="abstract-container" style="margin-top: 0;">
-  <img src="4.png" alt="Descriptive text for the image" style="width:40%; height:auto; display: block; margin: auto;">
+  <img src="4.png" alt="Descriptive text for the image" style="width:80%; height:auto; display: block; margin: auto;">
   <figcaption class="abstract-content" style="margin-top: 40px;">
     The model complexity comparison between SwinIR, HAT, and proposed DRCT evaluated on Urban100 dataset.
   </figcaption>
@@ -259,6 +278,14 @@ body {
 
 <!-- Space between images -->
 <div style="height: 40px;"></div> <!-- Adjust the height as needed for more or less space -->
+
+<div class="additional-text">
+    If you find our work helpful, please consider citing the following:
+</div>
+
+<!-- Space between images -->
+<div style="height: 40px;"></div> <!-- Adjust the height as needed for more or less space -->
+
 
 
 <div class="bibtex-section">
@@ -272,7 +299,7 @@ body {
             eprint={2404.00722},
             archivePrefix={arXiv},
             primaryClass={cs.CV}
-         }
+        }
     </pre>
   </div>
 </div>
