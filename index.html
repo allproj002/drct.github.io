@@ -224,7 +224,9 @@ body {
 <figure class="abstract-container" style="margin-top: 0;"> <!-- Remove top margin to avoid double spacing -->
   <img src="1.png" alt="Descriptive text for the image" style="width:40%; height:auto; display: block; margin: auto;">
   <figcaption class="abstract-content" style="margin-top: 70px;">
-    The feature map intensity on various benchmark datasets. We observed that feature map intensities decrease sharply at the end of SISR network, indicating potential information loss. In this paper, we propose DRCT to address this issue by enhancing receptive fields and adding dense-connections within residual blocks to mitigate information bottlenecks, thereby improving performance with a simpler model design.
+    The feature map intensity on various benchmark datasets. We observed that feature map intensities decrease sharply at the end of SISR network, indicating potential information loss.
+      In this paper, we propose DRCT to address this issue by enhancing receptive fields and adding dense-connections within residual blocks to mitigate information bottlenecks, thereby
+      improving performance with a simpler model design.
   </figcaption>
 </figure>
 
@@ -238,7 +240,14 @@ body {
 <div class="abstract-container">
   <div class="abstract-title">Abstract</div>
   <div class="abstract-content">
-    In recent years, Vision Transformer-based approaches for low-level vision tasks have achieved widespread success. Unlike CNN-based models, Transformers are more adept at capturing long-range dependencies, enabling the reconstruction of images utilizing non-local information. In the domain of super-resolution, Swin-transformer-based models have become mainstream due to their capability of global spatial information modeling and their shifting-window attention mechanism that facilitates the interchange of information between different windows. Many researchers have enhanced model performance by expanding the receptive fields or designing meticulous networks, yielding commendable results. However, we observed that it is a general phenomenon for the feature map intensity to be abruptly suppressed to small values towards the network’s end. This implies an information bottleneck and a diminishment of spatial information, implicitly limiting the model’s potential. To address this, we propose the Dense-residual-connected Transformer (DRCT), aimed at mitigating the loss of spatial information through dense-residual connections between layers, thereby unleashing the model’s potential and saving model away from information bottleneck. Experiment results indicate that our approach surpasses state-of-the-art methods on benchmarks dataset and performs commendably at NTIRE-2024 Image Super-Resolution (x4) Challenge.
+    In recent years, Vision Transformer-based approaches for low-level vision tasks have achieved widespread success. Unlike CNN-based models, Transformers are more adept at capturing long-range
+      dependencies, enabling the reconstruction of images utilizing non-local information. In the domain of super-resolution, Swin-transformer-based models have become mainstream due to their capability
+      of global spatial information modeling and their shifting-window attention mechanism that facilitates the interchange of information between different windows. Many researchers have enhanced model
+      performance by expanding the receptive fields or designing meticulous networks, yielding commendable results. However, we observed that it is a general phenomenon for the feature map intensity to
+      be abruptly suppressed to small values towards the network’s end. This implies an information bottleneck and a diminishment of spatial information, implicitly limiting the model’s potential. To
+      address this, we propose the Dense-residual-connected Transformer (DRCT), aimed at mitigating the loss of spatial information through dense-residual connections between layers, thereby unleashing
+      the model’s potential and saving model away from information bottleneck. Experiment results indicate that our approach surpasses state-of-the-art methods on benchmarks dataset and performs commendably
+      at NTIRE-2024 Image Super-Resolution (x4) Challenge.
   </div>
 </div>
 
