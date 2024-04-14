@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0.00001">
+<meta name="viewport" content="width=device-width, initial-scale=0.005">
 <title>DRCT: Saving Image Super-Resolution away from Information Bottlenecks</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
 <style>
@@ -302,35 +302,5 @@ body {
     </pre>
   </div>
 </div>
-
-
-    <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("slide");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slides[slideIndex-1].style.display = "flex";
-    }
-
-    // 添加自動播放功能
-    var slideInterval = setInterval(function(){ plusSlides(1); }, 4000); // 改變圖片每4秒
-
-    </script>
-
 </body>
 </html>
