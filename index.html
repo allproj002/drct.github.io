@@ -17,22 +17,22 @@ body {
 
 
 .header h1:first-child { /* 只針對第一個 <h1> 元素 */
-    font-size: 4em; /* 增加字體大小 */
+    font-size: 2.5em; /* 增加字體大小 */
     font-weight: bold; /* 加粗 */
     margin-bottom: 0; /* 減少到下一個元素的距離 */
-    letter-spacing: -2px; /* 稍微減少字母間距，視覺上更加緊密 */
+    letter-spacing: -1px; /* 稍微減少字母間距，視覺上更加緊密 */
 }
 
 .header {
     text-align: center; /* Center align the header */ 
     margin: 0; /* Remove default margins */
     padding: 10px 0; /* Add some padding for spacing */
-    font-size: 2.2em; /* Increase font size */
+    font-size: 1.5em; /* Increase font size */
 }
 .authors {
     padding: 0; /* Remove default padding */
     margin: 20px 0; /* Add some margin for spacing */
-    font-size: 1.7em; /* Increase font size */
+    font-size: 1.2em; /* Increase font size */
 }
 .author-name,
 .author-name:visited { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
@@ -59,18 +59,18 @@ body {
 
 .institute {
     margin-top: 15px; /* 這會在機構信息和作者名稱之間增加空間 */
-    font-size: 0.8em; /* 根據需要調整字體大小 */
+    font-size: 1em; /* 根據需要調整字體大小 */
     color: #333; /* 文本顏色 */
-    margin-bottom: 40px; /* 這是標題下方的空間，根據需要調整 */
+    margin-bottom: 30px; /* 這是標題下方的空間，根據需要調整 */
 }
 
 
 .conference-title {
     text-align: center;
-    font-size: 6em;
+    font-size: 2.5em;
     font-weight: bold;
-    margin-top: 30px; /* 減少或移除這個屬性以減少空間 */
-    margin-bottom: 60px; /* 這是標題下方的空間，根據需要調整 */
+    margin-top: 20px; /* 減少或移除這個屬性以減少空間 */
+    margin-bottom: 40px; /* 這是標題下方的空間，根據需要調整 */
     color: #333;
 }
 
@@ -81,21 +81,21 @@ body {
     margin: 20px 0;
 }
 .button {
-    padding: 50px 100px; /* 增加內邊距以進一步增大按鈕 */
+    padding: 15px 30px; /* 增加內邊距以進一步增大按鈕 */
     font-family: 'Noto Sans', sans-serif; 
-    font-size: 40px; /* 增加字體大小為原來的兩倍 */
+    font-size: 1em; /* 增加字體大小為原來的兩倍 */
     font-weight: bold; /* 字體加粗 */
     text-transform: uppercase; /* 文本轉為大寫 */
-    letter-spacing: 2px; /* 增加字母間距 */
+    letter-spacing: 1px; /* 增加字母間距 */
     background-color: #4A4A4A; /* 按鈕背景色 */
     color: white; /* 文本顏色 */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 0 40px; /* 增加邊距以增加按鈕間的距離 */
+    margin: 0 15px; /* 增加邊距以增加按鈕間的距離 */
     border: none;
-    border-radius: 100px; /* 增加圓角 */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* 增加陰影以獲得更深的效果 */
+    border-radius: 25px; /* 增加圓角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 增加陰影以獲得更深的效果 */
     transition: background-color 0.3s, box-shadow 0.3s; /* 增加過渡效果 */
     cursor: pointer; /* 鼠標懸停時的指針形狀 */
 }
@@ -129,7 +129,7 @@ body {
   outline: none;         /* Removes the outline */
 }
 .abstract-title {
-  font-size: 65px; /* Title font size, adjust as needed */
+  font-size: 1.8; /* Title font size, adjust as needed */
   font-weight: bold;
   margin-bottom: 20px; /* Space below the title */
   text-align: center;
@@ -138,36 +138,36 @@ body {
 .abstract-content {
   line-height: 1.6; /* Line height for readability */
   text-align: justify; /* Justify text for better formatting */
-  font-size: 53px; /* Content font size, adjust as needed */
+  font-size: 1.1em; /* Content font size, adjust as needed */
 }
 
 .caption {
   line-height: 1.6; /* Line height for readability */
   text-align: justify; /* Justify text for better formatting */
-  font-size: 53px; /* Content font size, adjust as needed */
+  font-size: 1.1em; /* Content font size, adjust as needed */
 
 
 }
 .bibtex-container {
-  width: 50%; /* Or whatever width you prefer */
-  height:20em;
-  margin: 0 auto; /* This will center the container */
-  padding: 5px; /* Add some padding inside the container */
-  background-color: #f8f8f8; /* A light background color */
-  border: 1px solid #e7e7e7; /* A subtle border */
-  border-radius: 4px; /* Rounded corners */
-  overflow: auto; /* To handle any overflow of content */
-  text-align: left;
-  font-size: 50px;
-  font-family: 'monospace', sans-serif;
-  line-height: 2; /* Increase line height for better readability */
+    width: 50%;
+    height: 20em;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    overflow: auto;
+    text-align: left;
+    font-size: 0.9em;
+    font-family: monospace;
+    line-height: 1.5;
 }
 
 .bibtex-title {
   text-align: center; /* Keeps the text aligned to the left */
   display: block; /* Ensures the title is on its own line */
   margin-bottom: 10px; /* Space between title and BibTeX entry */
-  font-size: 60px;
+  font-size: 1.5em;
 }
 
 
@@ -178,7 +178,7 @@ body {
 .additional-text {
     text-align: center; /* Center the text */
     margin: 20px 0; /* Add some margin above and below the text */
-    font-size: 3em; /* Adjust the font size as needed */
+    font-size: 1.2em; /* Adjust the font size as needed */
 }
 
     
